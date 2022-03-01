@@ -9,7 +9,12 @@
       <field name="priority" eval="1"></field>
       <field name="inherit_id" ref="gym_app.client_model_form"></field>
       <field name="arch" type="xml">
-        
+        <data>
+          <header position="inside">
+              <field name="hide_action_buttons" invisible="True"/>
+          </header>
+      </data>
+      
         <field name="name" position="before">
           <field name="user"></field>
         </field>
